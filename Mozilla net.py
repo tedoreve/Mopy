@@ -84,7 +84,7 @@ def save(html):
 #post = {'pageinfo': "userinfo",
 #        'themeinfo': "coremail",
 #        'userName': "zmf@nao.cas.cn",
-#        'password': "19910805.",
+#        'password': "",
 #        'secureLogon': "yes",
 #        'rememberUserName':"yes"    
 #        }
