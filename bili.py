@@ -56,7 +56,7 @@ timelist = [
         150,
         185,
         237,
-        267,
+        45,
         246,
         246,
         181,
@@ -88,15 +88,16 @@ while t < len(urllist):
     try:
         driver.set_page_load_timeout(5)#防止网页缓冲过长
         driver.get(urllist[t])
+        print('time'+str(t))
     except Exception:
-        print('timeout')
+        print('timeout'+str(t))
     #最大化浏览器,不想最大化的话就注释掉
     driver.maximize_window()
     #最大化播放器,不想最大化的话就注释掉
     driver.find_element_by_xpath\
     (element+'/div[@id="bilibiliPlayer"]/div[@class="bilibili-player-area video-state-pause"]/div[@class="bilibili-player-video-control"]/div[@name="browser_fullscreen"]').click()
     #防止命令太近反应不过来
-    time.sleep(1)
+    time.sleep(5)
     #播放
     driver.find_element_by_xpath(element).click()
     #视频持续时间
