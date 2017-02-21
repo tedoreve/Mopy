@@ -9,7 +9,7 @@ This is a python code package used to fuck the network. The below shows the inst
 
 ##bili.py
 
-1. 程序作用：
+* 程序作用：
 
 将B站视频地址和播放时间按顺序导入，运行后就会开启洗脑列表循环，所有列表中的视频都会重复以下流程
 
@@ -17,11 +17,11 @@ This is a python code package used to fuck the network. The below shows the inst
 
 最后一个视频结束后会自动跳转到第一个再循环播放
 
-2. 前期准备：
+* 前期准备：
 
 安装python3，推荐使用anaconda最新版本,不然其他依赖包要自己装->安装selenium，可以使用pip，如果安装了anaconda,可以直接使用conda install -c conda-forge selenium=3.0.2->如果使用Firefox,下载geckodriver.exe（自行搜索），并将其所在路径加入环境变量PATH。如果使用Chrome，下载chromedriver.exe，然后同上。Chrome没有测试过，推荐使用Firefox.
 
-3. 使用说明：
+* 使用说明：
 
 打开命令行->进入bili.py所在目录->输入python bili.py，如果安装anaconda,可以直接在编辑器中运行。
 
