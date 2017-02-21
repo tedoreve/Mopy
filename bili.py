@@ -79,8 +79,9 @@ timelist = [
         89,
         222
         ]
-
+#用来选择从第几个视频开始播放
 t = 0
+
 element='//div[@class="player"]'
 
 while t < len(urllist):
@@ -89,8 +90,8 @@ while t < len(urllist):
         driver.get(urllist[t])
     except Exception:
         print('timeout')
-    
-    driver.maximize_window()#最大化浏览器
+    #最大化浏览器,不想最大化的话就注释掉
+    driver.maximize_window()
     #最大化播放器,不想最大化的话就注释掉
     driver.find_element_by_xpath\
     (element+'/div[@id="bilibiliPlayer"]/div[@class="bilibili-player-area video-state-pause"]/div[@class="bilibili-player-video-control"]/div[@name="browser_fullscreen"]').click()
@@ -101,6 +102,6 @@ while t < len(urllist):
     #视频持续时间
     time.sleep(timelist[t])
     t = t + 1
-    #循环，不想循环的话去掉下面两行
+    #循环，不想循环的话就注释掉下面两行
     if t == len(urllist):
         t = 0
