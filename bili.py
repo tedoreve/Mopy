@@ -80,7 +80,7 @@ timelist = [
         222
         ]
 #用来选择从第几个视频开始播放
-t = 0
+t = 6
 
 element='//div[@class="player"]'
 
