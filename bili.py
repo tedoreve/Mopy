@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 Created on Sun Feb 19 18:49:51 2017
 
@@ -47,7 +47,20 @@ urllist = [
         'http://www.bilibili.com/video/av1827504/',
         'http://www.bilibili.com/video/av1541797/',
         'http://www.bilibili.com/video/av1528441/',
-        'http://www.bilibili.com/video/av1066202/'
+        'http://www.bilibili.com/video/av1066202/',
+        'http://www.bilibili.com/video/av8235658/',
+        'http://www.bilibili.com/video/av5700746/',
+        'http://www.bilibili.com/video/av2537319/',
+        'http://www.bilibili.com/video/av345660/',
+        'http://www.bilibili.com/video/av7029/',
+        'http://www.bilibili.com/video/av3327562/',
+        'http://www.bilibili.com/video/av6080584/',
+        'http://www.bilibili.com/video/av5176035/',
+        'http://www.bilibili.com/video/av7439521/',
+        'http://www.bilibili.com/video/av4283472',
+        'http://www.bilibili.com/video/av4465112/',
+        'http://www.bilibili.com/video/av570885/',
+        'http://www.bilibili.com/video/av2497369/'
         ]
 #视频持续播放时间，与网址相对应（单位 秒）
 timelist = [
@@ -77,32 +90,53 @@ timelist = [
         196,
         132,
         89,
-        222
+        222,
+        290,
+        147,
+        206,
+        282,
+        214,
+        219,
+        48,
+        202,
+        112,
+        240,
+        151,
+        217,
+        214
         ]
 #用来选择从第几个视频开始播放
-t = 6
+t = 20
 
 element='//div[@class="player"]'
 
 while t < len(urllist):
-    try:
-        driver.set_page_load_timeout(5)#防止网页缓冲过长
-        driver.get(urllist[t])
-        print('time'+str(t))
-    except Exception:
-        print('timeout'+str(t))
-    #最大化浏览器,不想最大化的话就注释掉
-    driver.maximize_window()
-    #最大化播放器,不想最大化的话就注释掉
-    driver.find_element_by_xpath\
-    (element+'/div[@id="bilibiliPlayer"]/div[@class="bilibili-player-area video-state-pause"]/div[@class="bilibili-player-video-control"]/div[@name="browser_fullscreen"]').click()
-    #防止命令太近反应不过来
-    time.sleep(5)
-    #播放
-    driver.find_element_by_xpath(element).click()
-    #视频持续时间
-    time.sleep(timelist[t])
-    t = t + 1
-    #循环，不想循环的话就注释掉下面两行
-    if t == len(urllist):
-        t = 0
+    while True:
+        try:
+            driver.set_page_load_timeout(10)#防止网页缓冲过长
+            driver.get(urllist[t])
+            print('time'+str(t))
+        except Exception:
+            print('timeout'+str(t))
+        try:
+            #最大化浏览器,不想最大化的话就注释掉
+            driver.maximize_window()
+            #最大化播放器,不想最大化的话就注释掉
+            driver.find_element_by_xpath\
+            (element+'/div[@id="bilibiliPlayer"]/div[@class="bilibili-player-area video-state-pause"]/div[@class="bilibili-player-video-control"]/div[@name="browser_fullscreen"]').click()
+            #防止命令太近反应不过来
+            time.sleep(5)
+                #播放
+            driver.find_element_by_xpath(element).click()
+            #视频持续时间
+            time.sleep(timelist[t])
+            t = t + 1
+            #循环，不想循环的话就注释掉下面两行
+            if t == len(urllist):
+                t = 0
+        except Exception:  
+            print('Fatal Error')
+            continue
+        break
+            
+
