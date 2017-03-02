@@ -8,10 +8,10 @@ Created on Sun Feb 19 18:49:51 2017
 from selenium import webdriver
 import time
 from sys import argv
-import numpy as np
+import random
 
 #==============================================================================
-def play(t,urllist,timelist,mode,timeofload,timeofbuffer):
+def play(index,urllist,timelist,mode,timeofload,timeofbuffer):
     
     element='//div[@class="player"]'
     
@@ -26,36 +26,34 @@ def play(t,urllist,timelist,mode,timeofload,timeofbuffer):
     #定义driver
     driver = webdriver.Firefox()
     
-    while t < len(urllist):
-        while True:
-            if mode == 2:
-                t = np.random.randint(len(urllist))
-            try:
-                driver.set_page_load_timeout(timeofload)#防止网页缓冲过长
-                driver.get(urllist[t])
-                print('time'+str(t))
-            except Exception:
-                print('timeout'+str(t))
-            try:
-                #最大化浏览器,不想最大化的话就注释掉
-                driver.maximize_window()
-                #最大化播放器,不想最大化的话就注释掉
-                driver.find_element_by_xpath\
-                (element+'/div[@id="bilibiliPlayer"]/div[@class="bilibili-player-area video-state-pause"]/div[@class="bilibili-player-video-control"]/div[@name="browser_fullscreen"]').click()
-                #防止命令太近反应不过来
-                time.sleep(timeofbuffer)
-                #播放
-                driver.find_element_by_xpath(element).click()
-                #视频持续时间
-                time.sleep(timelist[t])
-                t = t + 1
-                #循环，不想循环的话就注释掉下面两行
-                if t == len(urllist):
-                    t = 0
-            except Exception:  
-                print('Fatal Error')
-                continue
-            break
+    source = random.sample(range(len(urllist)), len(urllist))
+    i      = 0
+    while True:
+        if mode == 2:
+            index = source[i]
+            i     = i+1
+        try:
+            driver.set_page_load_timeout(timeofload)#防止网页缓冲过长
+            driver.get(urllist[index])
+            print('time'+str(index))
+        except Exception:
+            print('timeout'+str(index))
+        try:
+            #最大化浏览器,不想最大化的话就注释掉
+            driver.maximize_window()
+            #最大化播放器,不想最大化的话就注释掉
+            driver.find_element_by_xpath\
+            (element+'/div[@id="bilibiliPlayer"]/div[@class="bilibili-player-area video-state-pause"]/div[@class="bilibili-player-video-control"]/div[@name="browser_fullscreen"]').click()
+            #防止命令太近反应不过来
+            time.sleep(timeofbuffer)
+            #播放
+            driver.find_element_by_xpath(element).click()
+            #视频持续时间
+            time.sleep(timelist[index])
+        except Exception:  
+            print('Fatal Error')
+            continue
+
 #==============================================================================
 if __name__=='__main__':   
     #调用参数
@@ -68,7 +66,7 @@ if __name__=='__main__':
     else:
         print('请输入参数设定播放模式，比如"python bili.py -s": \n \
         -r和-repeat或者不输入参数都代表循环播放\n \
-        -s和-shuffle都代表随机播放' +  argv[1])
+        -s和-shuffle都代表随机播放')
     
     #视频网址
     urllist = [
