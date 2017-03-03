@@ -29,9 +29,9 @@ def play(index,urllist,timelist,mode,timeofload,timeofbuffer):
     source = random.sample(range(len(urllist)), len(urllist))
     i      = 0
     while True:
+        index = i
         if mode == 2:
             index = source[i]
-            i     = i+1
         try:
             driver.set_page_load_timeout(timeofload)#防止网页缓冲过长
             driver.get(urllist[index])
@@ -53,6 +53,9 @@ def play(index,urllist,timelist,mode,timeofload,timeofbuffer):
         except Exception:  
             print('Fatal Error')
             continue
+        i = i+1
+        if i == len(urllist):
+            i = 0
 
 #==============================================================================
 if __name__=='__main__':   
