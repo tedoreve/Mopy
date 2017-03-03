@@ -13856,3 +13856,123 @@ shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/t
 this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4675:9
 this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2715:15
 
+1488537723726	geckodriver	INFO	Listening on 127.0.0.1:4325
+1488537725752	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.wlzHVOnM42Zv
+1488537725767	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1488537726252	geckodriver::marionette	INFO	Connecting to Marionette on localhost:4333
+1488537728226	Marionette	INFO	Listening on port 4333
+1488537729797	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 15ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488537983481	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488538194668	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488538359927	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1488538672096	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488538825659	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488539072266	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488539360747	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488539649965	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 52ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488539941438	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488540224602	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488540530839	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 24ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488540727043	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488540972333	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 9ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488541090921	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488541313160	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488541592372	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488541784137	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488542007642	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 10ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488542289094	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 10ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488542532777	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488542758271	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488542966744	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488543141906	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 10ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488543363127	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488543458611	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 10ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488543712083	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 10ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488543805819	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488544067035	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488544235260	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488544513710	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488544765298	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 10ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488545024563	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488545233189	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488545390752	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 10ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488545628057	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 10ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488545831199	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 14ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488545949730	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488546178947	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 14ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488546484150	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+JavaScript warning: http://interface.bilibili.com/serverdate.js, line 1: SyntaxError: 08 is not a legal ECMA-262 octal constant
+1488546678990	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 27ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488546734287	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488546925520	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 10ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488546990743	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488547160210	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488547433383	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 13ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488547572129	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488547627407	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488547949915	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488548156088	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 13ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488548376831	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488548493219	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488548698673	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 11ms; caching disabled in FF51 due to bug; will be reenabled in FF52)
+1488548931877	Marionette	WARN	Using deprecated data structure for setting timeouts
+JavaScript warning: http://static.hdslb.com/player/js/bilibiliPlayer.min.js?v=78c65c64, line 0: Successfully compiled asm.js code (total compilation time 12ms; caching disabled in FF51 due to bug; will be reenabled in FF52)

@@ -35,9 +35,9 @@ def play(t,urllist,timelist,mode,timeofload,timeofbuffer):
         try:
             driver.set_page_load_timeout(timeofload)#防止网页缓冲过长
             driver.get(urllist[index])
-            print('time'+str(index))
+            print('time '+str(index))
         except Exception:
-            print('timeout'+str(index))
+            print('timeout '+str(index))
         try:
             #最大化浏览器,不想最大化的话就注释掉
             driver.maximize_window()
@@ -114,7 +114,6 @@ if __name__=='__main__':
             'http://www.bilibili.com/video/av4283472',
             'http://www.bilibili.com/video/av4465112/',
             'http://www.bilibili.com/video/av570885/',
-            'http://www.bilibili.com/video/av2497369/',
             'http://www.bilibili.com/video/av8805389/',
             'http://www.bilibili.com/video/av5078483/',
             'http://www.bilibili.com/video/av7234117/',
@@ -170,7 +169,6 @@ if __name__=='__main__':
             240,
             151,
             217,
-            214,
             199,
             218,
             297,
