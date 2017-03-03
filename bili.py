@@ -11,7 +11,7 @@ from sys import argv
 import random
 
 #==============================================================================
-def play(index,urllist,timelist,mode,timeofload,timeofbuffer):
+def play(t,urllist,timelist,mode,timeofload,timeofbuffer):
     
     element='//div[@class="player"]'
     
@@ -27,7 +27,7 @@ def play(index,urllist,timelist,mode,timeofload,timeofbuffer):
     driver = webdriver.Firefox()
     
     source = random.sample(range(len(urllist)), len(urllist))
-    i      = 0
+    i      = t
     while True:
         index = i
         if mode == 2:
