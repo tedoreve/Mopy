@@ -44,10 +44,12 @@ def play(t,urllist,timelist,mode,timeofload,timeofbuffer):
             #最大化播放器,不想最大化的话就注释掉
             driver.find_element_by_xpath\
             (element+'/div[@id="bilibiliPlayer"]/div[@class="bilibili-player-area video-state-pause"]/div[@class="bilibili-player-video-control"]/div[@name="browser_fullscreen"]').click()
+            print('maximize '+str(index))
             #防止命令太近反应不过来
             time.sleep(timeofbuffer)
             #播放
             driver.find_element_by_xpath(element).click()
+            print('play '+str(index))
             #视频持续时间
             time.sleep(timelist[index])
         except Exception:  
