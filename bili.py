@@ -7,14 +7,23 @@ Created on Sun Feb 19 18:49:51 2017
 
 from selenium import webdriver
 import time
-from sys import argv
 import random
 
 #==============================================================================
-def play(t,urllist,timelist,mode,timeofload,timeofbuffer,timeofnext):
-    
-    element='//div[@class="player"]'
-    
+def explorer(browser):
+    #定义driver
+    if browser == 'chrome':
+        driver = webdriver.Chrome()
+        driver.get('http://www.bilibili.com/html/help.html#p')
+        driver.find_element_by_xpath('//a[@id="bilibiliHtml5GrayTestBtn"]').click()
+        time.sleep(2)
+        driver.find_element_by_xpath('//div[@id="html5graypanel"]/div[@style="font-size: 14px; color: #222; line-height: 24px;"]/label/input').click()
+    else:
+        driver = webdriver.Firefox()
+    return driver
+        
+def play(urllist,timelist,mode,t,time0,browser):
+
     #不要动，我也不知道是啥
     firefoxProfile = webdriver.FirefoxProfile()
     firefoxProfile.set_preference('permissions.default.stylesheet', 2)
@@ -22,64 +31,84 @@ def play(t,urllist,timelist,mode,timeofload,timeofbuffer,timeofnext):
     firefoxProfile.set_preference('dom.ipc.plugins.enabled.libflashplayer.so','false')
     firefoxProfile.set_preference("http.response.timeout", 5)
     firefoxProfile.set_preference("dom.max_script_run_time", 5)
-    
-    #定义driver
-    driver = webdriver.Firefox()
-    
+
+    #随机列表
     source = random.sample(range(len(urllist)), len(urllist))
-    i      = t
+
+    #设置初始值
+    element      = '//div[@class="player"]'
+    if not t:
+        t            = 1
+    if not time0:
+        time0        = 5
+    i            = int(t) - 1
+    time0        = int(time0)
+    timeofload   = time0*2
+    timeofbuffer = time0
+    timeofnext   = time0
+    
+    driver = explorer(browser)
+
     while True:
         index = i
-        if mode == 2:
+        if mode == 's' or mode == 'shuffle':
             index = source[i]
         try:
-            driver.set_page_load_timeout(timeofload)#防止网页缓冲过长
+            #防止网页缓冲过长
+            driver.set_page_load_timeout(timeofload)
             driver.get(urllist[index])
-            print('time'+str(index))
+            print()
+            print('第'+str(index+1)+'个视频缓冲时间少于'+str(timeofload))
         except Exception:
-            print('timeout'+str(index))
+            print()
+            print('第'+str(index+1)+'个视频缓冲超时，吃药之后萌萌哒')
         try:
             #最大化浏览器,不想最大化的话就注释掉
             driver.maximize_window()
             #最大化播放器,不想最大化的话就注释掉
             driver.find_element_by_xpath\
             (element+'/div[@id="bilibiliPlayer"]/div[@class="bilibili-player-area video-state-pause"]/div[@class="bilibili-player-video-control"]/div[@name="browser_fullscreen"]').click()
-            print('maximize '+str(index))
+            print()
+            print('第'+str(index+1)+'个视频全屏成功')
             #防止命令太近反应不过来
             time.sleep(timeofbuffer)
             #播放
             driver.find_element_by_xpath(element).click()
-            print('play '+str(index))
-            
+            print()
+            print('第'+str(index+1)+'个视频播放成功')
+
+            #随时检测是否在播放，一旦关闭播放器就重新开一个
             try:
-                for i in range(int(timelist[index]/timeofnext)):
-                    test = driver.current_url
+                for j in range(int(timelist[index]/timeofnext)):
+                    driver.current_url
                     #视频持续时间
                     time.sleep(timeofnext)
             except:
-                print('Next video')
-                driver = webdriver.Firefox()
-        except Exception:  
-            print('Fatal Error')
+                print()
+                print('手动开始播放下一视频')
+                driver = explorer(browser)
+
+        except Exception:
+            #如果有错误，先测试浏览器是否关闭，若关闭则打开一个新的，若没有关闭，加1指数，继续循环
+            try:
+                driver.current_url
+            except:
+                driver = explorer(browser)
+            print()
+            print('致命错误，吃药之后萌萌哒')
+            i = i+1
+            if i == len(urllist):
+                i = 0
             continue
+        #一切正常后加1指数循环
         i = i+1
+        #防止指数溢出
         if i == len(urllist):
             i = 0
 
 #==============================================================================
-if __name__=='__main__':   
-    #调用参数
-    if len(argv) == 1:
-        mode = 1
-    elif argv[1] == '-r' or argv[1] == '-repeat' or argv[1] == '':
-        mode = 1
-    elif argv[1] == '-s' or argv[1] == '-shuffle':
-        mode = 2
-    else:
-        print('请输入参数设定播放模式，比如"python bili.py -s": \n \
-        -r和-repeat或者不输入参数都代表循环播放\n \
-        -s和-shuffle都代表随机播放')
-    
+if __name__=='__main__':
+
     #视频网址
     urllist = [
             'http://www.bilibili.com/video/av8247204/',
@@ -136,6 +165,7 @@ if __name__=='__main__':
             'http://www.bilibili.com/video/av8390254/',
             'http://www.bilibili.com/video/av5658553/'
             ]
+
     #视频持续播放时间，与网址相对应（单位 秒）
     timelist = [
             58,
@@ -192,9 +222,9 @@ if __name__=='__main__':
             112,
             230
             ]
-    
-    index        = 45  #用来选择从第几个视频开始播放
-    timeofload   = 10  #防止网页加载时间过长，网速慢就要调大，推荐5-20
-    timeofbuffer = 5   #防止自动跳转下一视频太快，反应不过来，网速慢就要调大，推荐1-5
-    timeofnext   = 3   #防止手动关闭当前页后跳转下一视频太快，网速慢就要调大，推荐1-5
-    play(index,urllist,timelist,mode,timeofload,timeofbuffer,timeofnext)
+    input('B站播放列表小程序bililist,源码https://github.com/tedoreve/. 按回车继续：')
+    mode          = input('(默认循环,输入r代表循环播放,输入s代表随机播放)  请输入参数设定播放模式: ')
+    index         = input('(默认第一个,播放列表不能为空,随机的话就无效了)  请设定从第几个视频开始播放：')
+    timeofbuffer  = input('(默认5,推荐3~7,网络慢就用大一些的值)           请设定缓冲时间：')
+    browser       = input('(默认firefox),输入chrome或者firefox           请设定浏览器:')
+    play(urllist,timelist,mode,index,timeofbuffer,browser)
