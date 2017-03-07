@@ -11,7 +11,7 @@ from sys import argv
 import random
 
 #==============================================================================
-def play(t,urllist,timelist,mode,timeofload,timeofbuffer):
+def play(t,urllist,timelist,mode,timeofload,timeofbuffer,timeofnext):
     
     element='//div[@class="player"]'
     
@@ -50,8 +50,15 @@ def play(t,urllist,timelist,mode,timeofload,timeofbuffer):
             #播放
             driver.find_element_by_xpath(element).click()
             print('play '+str(index))
-            #视频持续时间
-            time.sleep(timelist[index])
+            
+            try:
+                for i in range(int(timelist[index]/timeofnext)):
+                    test = driver.current_url
+                    #视频持续时间
+                    time.sleep(timeofnext)
+            except:
+                print('Next video')
+                driver = webdriver.Firefox()
         except Exception:  
             print('Fatal Error')
             continue
@@ -188,5 +195,6 @@ if __name__=='__main__':
     
     index        = 45  #用来选择从第几个视频开始播放
     timeofload   = 10  #防止网页加载时间过长，网速慢就要调大，推荐5-20
-    timeofbuffer = 5   #防止跳转下一视频太快，反应不过来，网速慢就要调大，推荐1-5
-    play(index,urllist,timelist,mode,timeofload,timeofbuffer)
+    timeofbuffer = 5   #防止自动跳转下一视频太快，反应不过来，网速慢就要调大，推荐1-5
+    timeofnext   = 3   #防止手动关闭当前页后跳转下一视频太快，网速慢就要调大，推荐1-5
+    play(index,urllist,timelist,mode,timeofload,timeofbuffer,timeofnext)
