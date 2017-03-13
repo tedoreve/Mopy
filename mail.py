@@ -1,32 +1,98 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Mar  2 18:36:47 2017
+#!/usr/bin/python3
+# coding:utf-8
+#=========================================================================
+# 加密SMTP
+#
+# 使用标准的25端口连接SMTP服务器时，使用的是明文传输，发送邮件的整个过程可能会被窃听。要更安全地发送邮件，可以加密SMTP会话，实际上就是先创建SSL安全连接，然后再使用SMTP协议发送邮件。  
+#=========================================================================
 
-@author: tedoreve
-"""
-import smtplib #加载smtplib模块
+from email import encoders
+from email.header import Header
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email.utils import formataddr
-my_sender='amamiya@el-psy-congroo.com' #发件人邮箱账号，为了后面易于维护，所以写成了变量
-my_user='tedoreve@qq.com' #收件人邮箱账号，为了后面易于维护，所以写成了变量
-def mail():
-  ret=True
-  try:
-    msg=MIMEText('你好，以下为验证链接','plain','utf-8')
-    msg['From']=formataddr(["发件人邮箱昵称",my_sender])  #括号里的对应发件人邮箱昵称、发件人邮箱账号
-    msg['To']=formataddr(["收件人邮箱昵称",my_user])  #括号里的对应收件人邮箱昵称、收件人邮箱账号
-    msg['Subject']="主题" #邮件的主题，也可以说是标题
- 
-    server=smtplib.SMTP("smtp.xxx.com",25) #发件人邮箱中的SMTP服务器，端口是25
-    server.login(my_sender,"发件人邮箱密码")  #括号中对应的是发件人邮箱账号、邮箱密码
-    server.sendmail(my_sender,[my_user,],msg.as_string())  #括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
-    server.quit()  #这句是关闭连接的意思
-  except Exception:  #如果try中的语句没有执行，则会执行下面的ret=False
-    ret=False
-  return ret
- 
-ret=mail()
-if ret:
-  print("ok") #如果发送成功则会返回ok，稍等20秒左右就可以收到邮件
-else:
-  print("filed") #如果发送失败则会返回filed
+from email.utils import parseaddr, formataddr, formatdate
+
+import smtplib
+
+# return Alias_name <xxxx@example.com>
+
+
+def _format_addr(s):
+    name, addr = parseaddr(s)
+    return formataddr((Header(name, 'utf-8').encode(), addr))
+
+# 接收参数: 发件人地址
+from_addr = 'wlzzs666@sina.com'
+
+# 接收参数: 客户端授权密码
+passwd = '3Sen4Shuei5Zeng'
+
+# 接收参数: 收件人地址,可多个
+to_addrs = 'wlzzs666@gmail.com'
+
+# 接收参数: SMTP服务器(注意:是发件人的smtp服务器)
+smtp_server = 'smtp.sina.com'
+
+
+# 接收参数: 邮件主题
+subject = '人生苦短'
+
+# 接收参数: 邮件正文
+plain = '我用python!'
+
+# 带附件邮件
+# 指定subtype为alternative，同时支持html和plain格式
+msg = MIMEMultipart('alternative')
+# 邮件正文中显示图片，同时附件的图片将不再显示
+# plain = 'Hello world and hello me!'
+msg.attach(MIMEText(str(plain), 'plain', 'utf-8'))       # 纯文本
+# html = '<html><body><h1>Hello</h1><p><img src="cid:0"></p></body></html>'
+# msg.attach(MIMEText(html, 'html', 'utf-8'))         # HTML
+# 添加附件：即关联一个MIMEBase，图片为本地读取
+with open('./hot.jpg', 'rb') as f:
+    # 设置附件中的MIME和文件名
+    mime = MIMEBase('image', 'jpeg', filename='hot.jpg')
+    # 加上必要的头信息
+    mime.add_header('Content-Disposition', 'attachment',
+                    filename='hot.jpg')
+    mime.add_header('Content-ID', '<0>')
+    mime.add_header('X-Attachment-Id', '0')
+    # 把附件的内容读进来
+    mime.set_payload(f.read())
+    # 用Base64编码
+    encoders.encode_base64(mime)
+    # 添加到MIMEMultipart
+    msg.attach(mime)
+
+# 未指定用户别名，则客户端会自动提取邮件地址中的名称作为邮件的用户别名
+msg['From'] = _format_addr(from_addr)
+# msg['To'] = _format_addr(to_addrs)
+#msg['To'] = '%s' % ','.join([_format_addr('<%s>' % to_addr)
+#                             for to_addr in to_addrs])
+msg['Subject'] = Header(str(subject), 'utf-8').encode()
+msg['Date'] = formatdate()
+
+
+#=========================================================================
+# 发送邮件
+#=========================================================================
+try:
+    # SMTP服务器设置(地址,端口):
+    server = smtplib.SMTP_SSL(smtp_server, 465)
+    # server.set_debuglevel(1)
+    # 连接SMTP服务器(发件人地址, 客户端授权密码)
+    server.login(from_addr, passwd)
+
+    # 发送邮件
+    server.sendmail(from_addr, to_addrs, msg.as_string())
+
+    print('邮件发送成功')
+
+except smtplib.SMTPException as e:
+    print(e)
+    print('邮件发送失败')
+
+#finally:
+#    # 退出SMTP服务器
+#    server.quit()
