@@ -13,13 +13,19 @@ import random
 def init(browser):
     #定义driver
     if browser == 'chrome':
+        
 #        Options = webdriver.ChromeOptions()
 #        Options.add_argument("--disable-bundled-ppapi-flash")
         driver = webdriver.Chrome()
+        print()
+        print('设置为html5播放器')
         driver.get('http://www.bilibili.com/html/help.html#p')
         driver.find_element_by_xpath('//a[@id="bilibiliHtml5GrayTestBtn"]').click()
         time.sleep(1)
         driver.find_element_by_xpath('//div[@id="html5graypanel"]/div[@style="font-size: 14px; color: #222; line-height: 24px;"]/label/input').click()
+        print()
+        print('设置成功')
+        
     else:
 #        Profile = webdriver.FirefoxProfile()
 #        Profile.set_preference('permissions.default.stylesheet', 2)
@@ -31,8 +37,6 @@ def init(browser):
     return driver
         
 def play(urllist,timelist,mode,t,time0,browser):
-
-
 
     #随机列表
     source = random.sample(range(len(urllist)), len(urllist))
@@ -82,7 +86,7 @@ def play(urllist,timelist,mode,t,time0,browser):
 
             #随时检测是否在播放，一旦关闭播放器就重新开一个
             try:
-                for j in range(int(timelist[index]/timeofnext)):
+                for j in range(int(int(timelist[index].strip())/timeofnext)):
                     driver.current_url
                     #视频持续时间
                     time.sleep(timeofnext)
@@ -98,7 +102,7 @@ def play(urllist,timelist,mode,t,time0,browser):
             except:
                 driver = init(browser)
             print()
-            print('致命错误，吃药之后萌萌哒')
+            print('致命错误，切到下个视频萌萌哒')
             i = i+1
             if i == len(urllist):
                 i = 0
@@ -121,10 +125,16 @@ if __name__=='__main__':
     timeobject = open('timelist.txt','r')
     timelist   = timeobject.readlines()
     timeobject.close()
-    
+    print()
     input('B站播放列表小程序bililist,源码https://github.com/tedoreve/. 按回车继续：')
+    print()
     mode          = input('(默认循环,输入r代表循环播放,输入s代表随机播放)  请输入参数设定播放模式: ')
+    print()
     index         = input('(默认第一个,播放列表不能为空,随机的话就无效了)  请设定从第几个视频开始播放：')
+    print()
     timeofbuffer  = input('(默认5,推荐3~7,网络慢就用大一些的值)            请设定缓冲时间：')
+    print()
     browser       = input('(默认firefox,输入chrome或者firefox)             请设定浏览器:')
+    
     play(urllist,timelist,mode,index,timeofbuffer,browser)
+    
