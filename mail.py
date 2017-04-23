@@ -23,7 +23,7 @@ def _format_addr(s):
     return formataddr((Header(name, 'utf-8').encode(), addr))
 
 # 接收参数: 发件人地址
-from_addr = 'wlzzs666@sina.com'
+from_addr = 'amamiya@el-psy-congroo.com'
 
 # 接收参数: 客户端授权密码
 passwd = '3Sen4Shuei5Zeng'
@@ -32,7 +32,7 @@ passwd = '3Sen4Shuei5Zeng'
 to_addrs = 'wlzzs666@gmail.com'
 
 # 接收参数: SMTP服务器(注意:是发件人的smtp服务器)
-smtp_server = 'smtp.sina.com'
+smtp_server = 'smtp.mxhichina.com'
 
 
 # 接收参数: 邮件主题
@@ -50,9 +50,9 @@ msg.attach(MIMEText(str(plain), 'plain', 'utf-8'))       # 纯文本
 # html = '<html><body><h1>Hello</h1><p><img src="cid:0"></p></body></html>'
 # msg.attach(MIMEText(html, 'html', 'utf-8'))         # HTML
 # 添加附件：即关联一个MIMEBase，图片为本地读取
-with open('./hot.jpg', 'rb') as f:
+with open('./Moppy.jpg', 'rb') as f:
     # 设置附件中的MIME和文件名
-    mime = MIMEBase('image', 'jpeg', filename='hot.jpg')
+    mime = MIMEBase('image', 'jpeg', filename='Moppy.jpg')
     # 加上必要的头信息
     mime.add_header('Content-Disposition', 'attachment',
                     filename='hot.jpg')
