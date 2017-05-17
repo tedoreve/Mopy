@@ -718,3 +718,62 @@ shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/t
 this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4675:9
 this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2715:15
 
+1495020255999	geckodriver	INFO	Listening on 127.0.0.1:7204
+1495020257952	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.mEz6jv2xQPGI
+1495020257958	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1495020258030	geckodriver::marionette	INFO	Connecting to Marionette on localhost:7211
+1495020263232	Marionette	INFO	Listening on port 7211
+JavaScript warning: http://simbad.u-strasbg.fr/cds-navbar-resources/js/jquery-1.10.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://simbad.u-strasbg.fr/Simlib/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://simbad.u-strasbg.fr/cds-navbar-resources/js/jquery-1.10.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://simbad.u-strasbg.fr/Simlib/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Child 244] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 244] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1495021017537	geckodriver	INFO	Listening on 127.0.0.1:8225
+1495021019598	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.47lRGaLiQCpR
+1495021019603	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1495021019608	geckodriver::marionette	INFO	Connecting to Marionette on localhost:8231
+1495021020642	Marionette	INFO	Listening on port 8231
+1495021237646	geckodriver	INFO	Listening on 127.0.0.1:8390
+1495021239661	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.iMffNisJpVOb
+1495021239666	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1495021239671	geckodriver::marionette	INFO	Connecting to Marionette on localhost:8396
+1495021240561	Marionette	INFO	Listening on port 8396
+[Child 6944] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6944] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+rionette on localhost:8431
+1495021247117	Marionette	INFO	Listening on port 8431
+[Child 2068] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1495021266333	geckodriver	INFO	Listening on 127.0.0.1:8450
+1495021268374	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.lmkTjMttODmo
+1495021268379	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1495021268385	geckodriver::marionette	INFO	Connecting to Marionette on localhost:8456
+1495021269290	Marionette	INFO	Listening on port 8456
+[Child 3828] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3828] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+rionette on localhost:8492
+1495021275216	Marionette	INFO	Listening on port 8492
+[Child 228] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 228] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1495021310647	geckodriver	INFO	Listening on 127.0.0.1:8514
+1495021312675	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.qIw4Nx9zHERB
+1495021312679	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1495021312684	geckodriver::marionette	INFO	Connecting to Marionette on localhost:8520
+1495021313643	Marionette	INFO	Listening on port 8520
+[Child 6536] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6536] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+rionette on localhost:8566
+1495021363884	Marionette	INFO	Listening on port 8566
+[Child 6704] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1495021720647	geckodriver	INFO	Listening on 127.0.0.1:9556
+1495021722644	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.FXpADaomxViv
+1495021722649	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1495021722655	geckodriver::marionette	INFO	Connecting to Marionette on localhost:9564
+1495021723256	Marionette	INFO	Listening on port 9564
+1495021762536	geckodriver	INFO	Listening on 127.0.0.1:9659
+1495021764563	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.WKFs8xL6MkNd
+1495021764567	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1495021764573	geckodriver::marionette	INFO	Connecting to Marionette on localhost:9668
+1495021765053	Marionette	INFO	Listening on port 9668
+[Child 5180] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5180] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
