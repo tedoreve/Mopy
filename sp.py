@@ -14,8 +14,8 @@ import time
         
 def download(url,post,t):
 
-    driver = webdriver.PhantomJS()
-#    driver = webdriver.Chrome()
+#    driver = webdriver.PhantomJS()
+    driver = webdriver.Chrome()
     driver.get(url)    
 #    print(driver.page_source)
 

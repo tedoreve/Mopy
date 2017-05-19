@@ -81,15 +81,15 @@ def save(html):
     file.close()
     return 'OK'
 #========================主程序================================================
-#post = {'pageinfo': "userinfo",
-#        'themeinfo': "coremail",
-#        'userName': "zmf@nao.cas.cn",
-#        'password': "",
-#        'secureLogon': "yes",
-#        'rememberUserName':"yes"    
-#        }
-#h = getLoginPage("https://mail.cstnet.cn/",'https://passport.escience.cn/oauth2/authorize?client_id=10000&redirect_uri=https%3A%2F%2Fmail.cstnet.cn%2Fcoremail%2Fcmcu_addon%2Fcoremail_umt_token.jsp&response_type=code&theme=coremail',post)
-h = getPage('http://210.77.16.21')
+post = {'pageinfo': "userinfo",
+        'themeinfo': "coremail",
+        'userName': "zmf@nao.cas.cn",
+        'password': "",
+        'secureLogon': "yes",
+        'rememberUserName':"yes"    
+        }
+h = getLoginPage("https://mail.cstnet.cn/",'https://passport.escience.cn/oauth2/authorize?client_id=10000&redirect_uri=https%3A%2F%2Fmail.cstnet.cn%2Fcoremail%2Fcmcu_addon%2Fcoremail_umt_token.jsp&response_type=code&theme=coremail',post)
+#h = getPage('http://210.77.16.21')
 result = getPretty(h)
 save(result)
 #n=100
