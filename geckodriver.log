@@ -2830,3 +2830,160 @@ JavaScript error: chrome://marionette/content/listener.js, line 870: TypeError: 
 JavaScript error: chrome://marionette/content/listener.js, line 1001: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
 [Child 9904] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 [Child 9904] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1498389886791	geckodriver	INFO	Listening on 127.0.0.1:2595
+1498389888982	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.RzAUTFLBtum4
+1498389888988	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498389889069	geckodriver::marionette	INFO	Connecting to Marionette on localhost:2609
+1498389890983	Marionette	INFO	Listening on port 2609
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel closing: too late to send/recv, messages will be lost
+
+1498389907920	geckodriver	INFO	Listening on 127.0.0.1:3190
+1498389909981	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.UxHA8gAyoHWm
+1498389909981	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498389909997	geckodriver::marionette	INFO	Connecting to Marionette on localhost:3216
+1498389910476	Marionette	INFO	Listening on port 3216
+[Child 2940] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1498391676188	geckodriver	INFO	Listening on 127.0.0.1:5407
+1498391678254	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.p3jJC8g2GHi1
+1498391678259	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498391678264	geckodriver::marionette	INFO	Connecting to Marionette on localhost:5420
+1498391678741	Marionette	INFO	Listening on port 5420
+[Child 11468] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11468] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1498395015061	geckodriver	INFO	Listening on 127.0.0.1:9237
+1498395017121	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.baRmNG2mrQVU
+1498395017125	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498395017131	geckodriver::marionette	INFO	Connecting to Marionette on localhost:9245
+1498395017648	Marionette	INFO	Listening on port 9245
+JavaScript error: chrome://marionette/content/listener.js, line 1001: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+1498448384204	geckodriver	INFO	Listening on 127.0.0.1:10137
+1498448386324	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.yOfhI1dY79yn
+1498448386329	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498448386386	geckodriver::marionette	INFO	Connecting to Marionette on localhost:10143
+1498448388159	Marionette	INFO	Listening on port 10143
+1498448397011	geckodriver	INFO	Listening on 127.0.0.1:10168
+1498448399073	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.HTe1lf70pZS9
+1498448399079	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498448399083	geckodriver::marionette	INFO	Connecting to Marionette on localhost:10174
+1498448399557	Marionette	INFO	Listening on port 10174
+JavaScript error: chrome://marionette/content/listener.js, line 1001: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[Child 12228] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12228] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1498463032148	geckodriver	INFO	Listening on 127.0.0.1:5131
+1498463034213	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.PBTtZv0yDtnv
+1498463034218	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498463034223	geckodriver::marionette	INFO	Connecting to Marionette on localhost:5138
+1498463034944	Marionette	INFO	Listening on port 5138
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: this.browserForTab is undefined
+Full stack: hasRemotenessChange@chrome://marionette/content/browser.js:233:9
+executeWhenReady@chrome://marionette/content/browser.js:264:9
+GeckoDriver.prototype.sendAsync@chrome://marionette/content/driver.js:218:5
+send/<@chrome://marionette/content/proxy.js:138:7
+send@chrome://marionette/content/proxy.js:105:12
+ownPriorityGetterTrap.get/<@chrome://marionette/content/proxy.js:24:25
+GeckoDriver.prototype.findElement@chrome://marionette/content/driver.js:1688:31
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+Task_spawn@resource://gre/modules/Task.jsm:168:12
+TaskImpl_handleResultValue@resource://gre/modules/Task.jsm:388:16
+TaskImpl_run@resource://gre/modules/Task.jsm:327:13
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+Task_spawn@resource://gre/modules/Task.jsm:168:12
+Dispatcher.prototype.execute@chrome://marionette/content/dispatcher.js:117:13
+Dispatcher.prototype.onPacket@chrome://marionette/content/dispatcher.js:88:5
+DebuggerTransport.prototype._onJSONObjectReady/<@chrome://marionette/content/server.js -> resource://devtools/shared/transport/transport.js:483:11
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: this.browserForTab is undefined
+Full stack: hasRemotenessChange@chrome://marionette/content/browser.js:233:9
+executeWhenReady@chrome://marionette/content/browser.js:264:9
+GeckoDriver.prototype.sendAsync@chrome://marionette/content/driver.js:218:5
+send/<@chrome://marionette/content/proxy.js:138:7
+send@chrome://marionette/content/proxy.js:105:12
+ownPriorityGetterTrap.get/<@chrome://marionette/content/proxy.js:24:25
+GeckoDriver.prototype.findElement@chrome://marionette/content/driver.js:1688:31
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+Task_spawn@resource://gre/modules/Task.jsm:168:12
+TaskImpl_handleResultValue@resource://gre/modules/Task.jsm:388:16
+TaskImpl_run@resource://gre/modules/Task.jsm:327:13
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+Task_spawn@resource://gre/modules/Task.jsm:168:12
+Dispatcher.prototype.execute@chrome://marionette/content/dispatcher.js:117:13
+Dispatcher.prototype.onPacket@chrome://marionette/content/dispatcher.js:88:5
+DebuggerTransport.prototype._onJSONObjectReady/<@chrome://marionette/content/server.js -> resource://devtools/shared/transport/transport.js:483:11
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+
+*************************
+*************************
+A coding exception was thrown in a Promise rejection callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: TypeError: this.browserForTab is undefined
+Full stack: hasRemotenessChange@chrome://marionette/content/browser.js:233:9
+executeWhenReady@chrome://marionette/content/browser.js:264:9
+GeckoDriver.prototype.sendAsync@chrome://marionette/content/driver.js:218:5
+send/<@chrome://marionette/content/proxy.js:138:7
+send@chrome://marionette/content/proxy.js:105:12
+ownPriorityGetterTrap.get/<@chrome://marionette/content/proxy.js:24:25
+GeckoDriver.prototype.findElement@chrome://marionette/content/driver.js:1688:31
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+Task_spawn@resource://gre/modules/Task.jsm:168:12
+TaskImpl_handleResultValue@resource://gre/modules/Task.jsm:388:16
+TaskImpl_run@resource://gre/modules/Task.jsm:327:13
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+Task_spawn@resource://gre/modules/Task.jsm:168:12
+Dispatcher.prototype.execute@chrome://marionette/content/dispatcher.js:117:13
+Dispatcher.prototype.onPacket@chrome://marionette/content/dispatcher.js:88:5
+DebuggerTransport.prototype._onJSONObjectReady/<@chrome://marionette/content/server.js -> resource://devtools/shared/transport/transport.js:483:11
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+
+*************************
+Marionette threw an error: TypeError: this.browserForTab is undefined
+hasRemotenessChange@chrome://marionette/content/browser.js:233:9
+executeWhenReady@chrome://marionette/content/browser.js:264:9
+GeckoDriver.prototype.sendAsync@chrome://marionette/content/driver.js:218:5
+send/<@chrome://marionette/content/proxy.js:138:7
+send@chrome://marionette/content/proxy.js:105:12
+ownPriorityGetterTrap.get/<@chrome://marionette/content/proxy.js:24:25
+GeckoDriver.prototype.findElement@chrome://marionette/content/driver.js:1688:31
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+Task_spawn@resource://gre/modules/Task.jsm:168:12
+TaskImpl_handleResultValue@resource://gre/modules/Task.jsm:388:16
+TaskImpl_run@resource://gre/modules/Task.jsm:327:13
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+Task_spawn@resource://gre/modules/Task.jsm:168:12
+Dispatcher.prototype.execute@chrome://marionette/content/dispatcher.js:117:13
+Dispatcher.prototype.onPacket@chrome://marionette/content/dispatcher.js:88:5
+DebuggerTransport.prototype._onJSONObjectReady/<@chrome://marionette/content/server.js -> resource://devtools/shared/transport/transport.js:483:11
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+
+[Child 5320] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5320] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1498532115534	geckodriver	INFO	Listening on 127.0.0.1:9005
+1498532117637	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.T016IWaM5IkY
+1498532117637	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498532117705	geckodriver::marionette	INFO	Connecting to Marionette on localhost:9020
+1498532119287	Marionette	INFO	Listening on port 9020
