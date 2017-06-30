@@ -2987,3 +2987,21 @@ exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> re
 1498532117637	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
 1498532117705	geckodriver::marionette	INFO	Connecting to Marionette on localhost:9020
 1498532119287	Marionette	INFO	Listening on port 9020
+1498579775129	geckodriver	INFO	Listening on 127.0.0.1:4673
+1498579777209	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.45IlHgIzGZdC
+1498579777215	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498579777221	geckodriver::marionette	INFO	Connecting to Marionette on localhost:4685
+1498579778355	Marionette	INFO	Listening on port 4685
+1498579787115	geckodriver	INFO	Listening on 127.0.0.1:4707
+1498579789163	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.SdPwfvFsddXK
+1498579789171	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498579789177	geckodriver::marionette	INFO	Connecting to Marionette on localhost:4720
+1498579789686	Marionette	INFO	Listening on port 4720
+JavaScript error: chrome://marionette/content/listener.js, line 1001: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+1498700988735	geckodriver	INFO	Listening on 127.0.0.1:4748
+1498700990833	mozprofile::profile	INFO	Using profile path C:\Users\tedoreve\AppData\Local\Temp\rust_mozprofile.pMxr5eiBDZPA
+1498700990837	geckodriver::marionette	INFO	Starting browser D:\software\Firefox\firefox.exe
+1498700990901	geckodriver::marionette	INFO	Connecting to Marionette on localhost:4756
+1498700992733	Marionette	INFO	Listening on port 4756
+[Child 10140] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10140] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
