@@ -24,20 +24,21 @@ def download(url,post,t):
     driver = webdriver.Firefox()
 #    driver = webdriver.Chrome()
     driver.get(url[0])
-    time.sleep(10)
-    driver.get(url[1])
+#    time.sleep(10)
+#    driver.get(url[1])
 #    print(driver.page_source)
-    time.sleep(1)
-    while True:
-        try:
-            driver.find_element_by_xpath('//div[@class="mod_container"]/div[@class="seckill_container"]\
-            /div[@class="skwrap"]/div[@class="spsk"]/div[@class="grid_c1"]/ul[@class=\
-            "seckill_mod_goodslist clearfix"]/div[@class="spsk_item seckill_mod_goods_soldout"]/\
-            div[@class="spsk_item_container"]/div[@class="spsk_item_title"]/a[@class="spsk_item_btn"]').click()
-            break
-        except:
-            print('again')
-            continue
+#    time.sleep(1)
+#    while True:
+#        try:
+    a = driver.find_element_by_xpath('//div[@class="b-page-body"]/div[@class="main-inner"]\
+    /div[@class="viewbox report-scroll-module"]/div[@class="info"]/div[@class="v-title-info"]\
+    /div[@class="v-title-line v-rank"]/span').text
+    print(a)
+            
+#            break
+#        except:
+#            print('again')
+#            continue
 #    box = driver.find_element_by_id("username") #定位box
 ##    box.send_keys(Keys.TAB) #在box点击鼠标
 ###    box.send_keys(post[0])  #在box输入
@@ -79,7 +80,7 @@ def download(url,post,t):
 #==============================================================================
 if __name__=='__main__':
 
-    url  = ['https://passport.jd.com/new/login.aspx','https://miaosha.jd.com/']
+    url  = ['http://www.bilibili.com/video/av10729120/']
                 
     post = [' 201418002509026',' 19910805.']
     
