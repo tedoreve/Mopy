@@ -43,9 +43,11 @@ def ip_scan(ip):
         for i in range(0,65534):
             _thread.start_new_thread(socket_port,(ip,int(i)))
         print(u'扫描端口完成，总共用时 ：%.2f' %(time.time()-start_time))
+        
         input("Press Enter to Exit")
     except:
         print(u'扫描ip出错')
+
          
  
 if __name__=='__main__':
